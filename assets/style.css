@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+--fj-brand: #fb8d19;
+--fj-brand-rgb: 251, 141, 25;
+--fj-dark: #212237;
+--fj-body: #989898;
+--f-main: "Poppins", sans-serif;
+--transition: all .6s cubic-bezier(.165, .84, .44, 1);
+--shadow: 0px, 15px, 30px, rgba(0,0,0,0.1);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--f-main );
+  color: var(--fj-body);
+  line-height: 1.8;
+}
+
+
+h1,.h1 h2,.h2 h3,.h3 h4,.h4 h5,.h5 h6,.h6 {
+  font-weight: 700;
+  color: var(--fj-dark);
+  font-family: var(--f-main);
+}
+.text-brand{
+  color: var(--fj-brand);
+}
+.navbar-brand {
+  color: var(--fj-brand);
+}
+
+#sel{
+  color: rgb(15, 15, 15);
+}
+
+#pp{
+  font-weight: 600;
+  font-size: large;
+}
+
+.navbar{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar .navbar-nav{
+justify-content: space-between;
+}
+
+.btn-success{
+  background-color: var(--fj-brand);
+  border :1px solid var(--fj-brand);
+}
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section-tittle{
+  margin:0 auto 60px auto;
+  max-width: 550px;
+}
+
+.section-tittle .line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--fj-brand);
+  display: inline-block;
+}
+.project {
+  overflow: hidden;
+  position: relative;
+}
+.project .content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--fj-brand);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project img,
+.project .content {
+transition: var(--transition);
+}
+
+.project:hover .content {
+top: 0;
+}
+
+.project:hover img {
+  transform: translateY(-100%);
+}
+
+.side-image {
+  width: 100%; /* Sesuaikan dengan lebar gambar yang diinginkan */
+  height: auto; /* Sesuaikan dengan tinggi gambar yang diinginkan */
+  float: right; /* Mengatur gambar agar tampil di sebelah kiri */
+  margin-top: 20px; /* Jarak antara gambar dengan konten lainnya */ 
+}
+
+.edu {
+  position: relative;
+}
+.edu::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: rgba(var(--fj-brand-rgb), 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.edu::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: var(--fj-brand);
+  position: absolute;
+  left: -7px;
+  top: 0;
+}
+
+#contact .form-control {
+  border-radius: 0;
+}
+#contact .form-control:focus { 
+  box-shadow: none;
+  border-color: var(--fj-brand);
+}
+#contact input.form-control {
+  height: 40px;
+}
+footer {
+  background-color: var(--fj-dark);
+  padding-top:85px;
+}
+footer h4 {
+  color: white;
+  
+}
+
+footer p,
+footer li,
+footer li a {
+  color: rgba(255,255,255,0.7);
+  list-style: none;
+  text-decoration: none;
+}
+footer ul {
+  text-decoration: none;
+  padding: 0;
+  
+}
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom:  1px rgba(255,255,255,0.2);
+}
+.footer-bottom {
+  padding-top:40px;
+  padding-bottom: 40px;
+}
+
+
+
